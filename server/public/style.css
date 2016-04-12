@@ -1,0 +1,15 @@
+body {
+  background-image:
+    linear-gradient(
+      to right,
+      red,
+      white,
+      blue
+    );
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: white;
+}
+button{
+  background-color: #A7F8E0;
+
+}

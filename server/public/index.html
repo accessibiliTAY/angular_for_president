@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="whosGonnaWin">
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Angular for President</title>
+  </head>
+
+
+
+  <body>
+<section>
+
+  <div ng-controller="listCandidates">
+      <button ng-click="addDems()">Click Here to see D. Candidates</button>
+        <div ng-show="hitButton">
+          Democrats:
+          <ul>
+            <li ng-repeat="candidate in democrats">
+              {{candidate}}
+            </li>
+          </ul>
+        </div>
+        <button ng-click="addReps()"> Click here to see R. candidates</button>
+      <div ng-show="buttonHit">
+          Republicans:
+          <ul>
+            <li ng-repeat="candidate in republicans">
+              {{candidate}}
+            </li>
+          </ul>
+        </div>
+  <!-- </div>
+</section>
+<section>
+<div ng-controller="postWinner"> -->
+  <h1>The Winner:</h1>
+    <button ng-click="addWinner(winner)">Winner</button>
+  <div ng-show="buttoncClick">
+    <h2>{{winner}}</h2>
+</div>
+</div>
+</section>
+  </body>
+</html>
